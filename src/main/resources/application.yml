@@ -1,0 +1,9 @@
+server:
+  port: 8088
+
+spring:
+  task:
+    execution:
+      pool:
+        core-size: 6
+        max-size: 6
