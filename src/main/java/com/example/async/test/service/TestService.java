@@ -53,7 +53,7 @@ public class TestService {
 
     @Async
     public CompletableFuture<String> asyncReturnCompletableFuture(int num) throws InterruptedException {
-        String result = "Async Done" + num;
+        String result = "Async Done_" + num;
         logger.info("call_" + num);
         Thread.sleep(1000);
 

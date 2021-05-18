@@ -7,16 +7,16 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.concurrent.Executor;
 
-//@Configuration
-//@EnableAsync
+@Configuration
+@EnableAsync
 public class AsyncConfiguration {
-//    @Bean
-//    public Executor asyncThreadTaskExecutor(){
-//        ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
-//        threadPoolTaskExecutor.setCorePoolSize(6);
-//        threadPoolTaskExecutor.setMaxPoolSize(6);
-//        threadPoolTaskExecutor.setThreadNamePrefix("kokoo-pool");
-//
-//        return threadPoolTaskExecutor;
-//    }
+    @Bean
+    public Executor asyncThreadTaskExecutor(){
+        ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
+        threadPoolTaskExecutor.setCorePoolSize(6);
+        threadPoolTaskExecutor.setMaxPoolSize(6);
+        threadPoolTaskExecutor.setThreadNamePrefix("kokoo-pool");
+
+        return threadPoolTaskExecutor;
+    }
 }
